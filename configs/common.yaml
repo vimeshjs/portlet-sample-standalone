@@ -5,6 +5,7 @@ portlet:
   version: 1.0.1
   name: standalone
   layout: main
+  language: cn
   redirects:
     '/': 'menu://main'
     '/users' : 'menu://main/settings/users'

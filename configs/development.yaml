@@ -8,6 +8,7 @@ portlet:
   logRoutes: true
   logRequests: true
   uploadDir: '{{root}}/mnt/uploads'
+  uploadMaxFileSize: 1G
   storages:
     avatar: 
       type: local

@@ -53,7 +53,13 @@ function auth(req, res, next) {
         next()
     })
 }
+function i18nSwitch(req, res, next) {
+    if (req.query.lang)
+        res.locals.$language = req.query.lang
+    next()
+}
+
 module.exports = {
     setup,
-    beforeAll: [jwt, auth]
+    beforeAll: [i18nSwitch, jwt, auth]
 }
