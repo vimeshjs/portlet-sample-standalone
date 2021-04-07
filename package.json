@@ -9,6 +9,7 @@
     "@vimesh/mongodb": "^0.10.7",
     "@vimesh/portlet": "^0.10.20",
     "@vimesh/services": "^0.10.1",
+    "@vimesh/utils": "^0.10.22",
     "bluebird": "^3.7.2",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
@@ -18,7 +19,7 @@
     "passport-local": "^1.0.0"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon index.js --ignore mnt/",
+    "dev": "cross-env NODE_ENV=development PORT=28001 SELF_URL=http://localhost:{{PORT}}/ STORAGE_ROOT={{ROOT}}/mnt/sample nodemon index.js --ignore mnt/",
     "start": "cross-env NODE_ENV=production DBURI=mongodb://localhost/standalone  pm2 start index.js --name standalone",
     "test": "jest tests/**/*.test.js --runInBand --forceExit"
   }

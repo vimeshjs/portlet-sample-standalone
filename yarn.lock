@@ -1589,6 +1589,23 @@
     moment-timezone "^0.5.31"
     uuid "^8.2.0"
 
+"@vimesh/utils@^0.10.22":
+  version "0.10.22"
+  resolved "https://registry.yarnpkg.com/@vimesh/utils/-/utils-0.10.22.tgz#b227ccf37b856c8554a8d72c57eeeb7d2153277f"
+  integrity sha512-uRkAfrJljOIhIy/5Yk9H0uEgJUv/Ws2n2w7DrnuCrMaIz5ycplduzOl3685IJ6Z/bILzA1oZl2qF7gLmY9cV2g==
+  dependencies:
+    "@vimesh/logger" "^0.10.1"
+    bluebird "^3.7.2"
+    crc "^3.8.0"
+    glob "^7.1.6"
+    graceful-fs "^4.2.4"
+    handlebars "^4.7.6"
+    js-yaml "^3.14.0"
+    lodash "^4.17.15"
+    moment "^2.27.0"
+    moment-timezone "^0.5.31"
+    uuid "^8.2.0"
+
 "@vue/component-compiler-utils@^3.0.0", "@vue/component-compiler-utils@^3.1.2":
   version "3.2.0"
   resolved "https://registry.npmjs.org/@vue/component-compiler-utils/-/component-compiler-utils-3.2.0.tgz#8f85182ceed28e9b3c75313de669f83166d11e5d"
