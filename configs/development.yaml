@@ -3,6 +3,14 @@ logger:
 portlet:
   mock: true
   debug: true
-  compress: true
+  compress: false
   logRoutes: true
   logRequests: true
+  storages:
+    avatar: 
+      type: local
+      options:
+        root: '{{STORAGE_ROOT}}/storage'
+      bucket: 'main'
+      prefix: 'avatar/'
+      cacheDir: '{{STORAGE_ROOT}}/cache'

@@ -1,4 +1,19 @@
 logger:
   level: warn
 portlet:
-  layout: admin
+  mock: true
+  compress: true
+  logRoutes: true
+  logRequests: true
+  storages:
+    avatar: 
+      type: '@vimesh/storage-plugin-minio'
+      options:
+        endPoint: 'localhost'
+        port: 9000
+        useSSL: false
+        accessKey: 'minioadmin'
+        secretKey: 'minioadmin'
+      bucket: 'main'
+      prefix: 'avatar/'
+      cacheDir: '{{STORAGE_ROOT}}/cache'

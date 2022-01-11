@@ -12,14 +12,17 @@ portlet:
     '/users' : 'menu://main/settings/users'
   uploadDir: '{{STORAGE_ROOT}}/uploads'
   uploadMaxFileSize: 1G
-  storages:
-    avatar: 
-      type: local
-      options:
-        root: '{{STORAGE_ROOT}}/storage'
-      bucket: 'main'
-      prefix: 'avatar/'
-      cacheDir: '{{STORAGE_ROOT}}/cache'
   passport:
     jwt:
       expiration: 24h
+  plugins:
+    - '@vimesh/portlet-helper-es5'
+    - '@vimesh/portlet-helper-faicon'
+    - '@vimesh/portlet-helper-obfuscate'
+    - '@vimesh/portlet-helper-tailwind'
+    - '@vimesh/portlet-plugin-health'
+    - '@vimesh/portlet-plugin-vue'
+    - '@vimesh/portlet-plugin-storage'
+  handlebars:
+    settings:
+      #tailwindCssFile: '{{ROOT}}/public/tailwind@2.2.7.min.css'
