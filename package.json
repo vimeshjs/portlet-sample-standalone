@@ -21,7 +21,7 @@
     "@vimesh/portlet-plugin-storage": "^0.11.1",
     "@vimesh/storage-plugin-minio": "^0.11.1",
     "bluebird": "^3.7.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
     "moment-timezone": "^0.5.31",
